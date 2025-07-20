@@ -7,49 +7,61 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-<button id="scrollTopBtn" title="ページトップへ">↑</button>
+
+  <!-- ヘッダー -->
   <header>
     <div class="logo-area">
-      <img src="img/icon.png" alt="ロゴ" class="logo-icon" />
+      <img class="logo-icon" src="img/icon.png" alt="ロゴ">
       <span class="logo-text">清住珈琲</span>
     </div>
-    <nav>
+
+    <!-- ✅ ハンバーガーメニュー（1つだけ） -->
+<button class="hamburger" id="hamburger" aria-label="メニューを開く">
+  <span class="bar"></span>
+  <span class="bar"></span>
+  <span class="bar"></span>
+  <span class="close-label">＞</span> <!-- ←追加 -->
+</button>
+
+    <!-- ナビゲーション -->
+    <nav id="nav-menu">
       <a href="#menu">メニュー</a>
       <a href="#about">私たちについて</a>
       <a href="#contact">お問い合わせ</a>
     </nav>
   </header>
 
+  <!-- ヒーロー -->
   <section class="hero">
     <div class="hero-text">
       <h2>ようこそ、<br />寛ぎの空間へ</h2>
     </div>
   </section>
 
+  <!-- メイン -->
   <main>
-<section id="menu" class="section">
-  <h3>お品書き</h3>
-  <div class="menu-grid">
-    <div class="menu-block">
-      <h4>お飲みもの</h4>
-      <ul>
-        <li>深煎り</li>
-        <li>中深煎り</li>
-        <li>浅煎り</li>
-        <li>抹茶</li>
-      </ul>
-    </div>
-    <div class="menu-block">
-      <h4>甘味</h4>
-      <ul>
-        <li>どら焼き</li>
-        <li>二人静か</li>
-        <li>最中</li>
-      </ul>
-    </div>
-  </div>
-</section>
-
+    <section id="menu" class="section">
+      <h3>お品書き</h3>
+      <div class="menu-grid">
+        <div class="menu-block">
+          <h4>お飲みもの</h4>
+          <ul>
+            <li>深煎り</li>
+            <li>中深煎り</li>
+            <li>浅煎り</li>
+            <li>抹茶</li>
+          </ul>
+        </div>
+        <div class="menu-block">
+          <h4>甘味</h4>
+          <ul>
+            <li>どら焼き</li>
+            <li>二人静か</li>
+            <li>最中</li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
     <section id="about" class="section">
       <h3>清住珈琲について</h3>
@@ -65,6 +77,7 @@
   <footer>
     <p>© 2025 清住珈琲</p>
   </footer>
+
   <script src="script.js"></script>
 </body>
 </html>
